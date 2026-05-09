@@ -1,0 +1,174 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* ─── Neumorphic Palette & Variables ───────────────────────────────── */
+:root {
+  --bg-color: #F0F0F0;
+  --text-main: #707070;
+  --text-dark: #4a4a4a;
+  --primary: #628B99; /* Muted teal from image */
+  --primary-hover: #547a87;
+  
+  /* Shadows for #F0F0F0 */
+  --shadow-dark: #d1d5db; /* Soft gray */
+  --shadow-light: #ffffff;
+}
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --color-background: var(--bg-color);
+  --color-foreground: var(--text-main);
+  --color-primary: var(--primary);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+  }
+
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg-color); }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+}
+
+/* ─── Neumorphic Components ──────────────────────────────────────────── */
+@layer components {
+  /* Standard Card (Flat Neumorphism) */
+  .neu-card {
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    box-shadow: 12px 12px 24px var(--shadow-dark), 
+                -12px -12px 24px var(--shadow-light);
+    border: 2px solid transparent; /* Prevents layout shift if borders are needed */
+  }
+
+  /* Pressed Card (Inner Shadow) - Good for inputs or active states */
+  .neu-pressed {
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    box-shadow: inset 8px 8px 16px var(--shadow-dark), 
+                inset -8px -8px 16px var(--shadow-light);
+  }
+
+  /* Circle Icon Button */
+  .neu-icon-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    color: var(--text-main);
+    box-shadow: 6px 6px 12px var(--shadow-dark), 
+                -6px -6px 12px var(--shadow-light);
+    transition: all 0.2s ease-in-out;
+  }
+  .neu-icon-btn:hover {
+    box-shadow: inset 4px 4px 8px var(--shadow-dark), 
+                inset -4px -4px 8px var(--shadow-light);
+    color: var(--primary);
+  }
+
+  /* Standard Pill Button (Secondary) */
+  .neu-btn {
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    background: var(--bg-color);
+    color: var(--text-dark);
+    font-weight: 600;
+    box-shadow: 6px 6px 12px var(--shadow-dark), 
+                -6px -6px 12px var(--shadow-light);
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .neu-btn:hover {
+    box-shadow: inset 4px 4px 8px var(--shadow-dark), 
+                inset -4px -4px 8px var(--shadow-light);
+  }
+
+  /* Primary Pill Button (Colored) */
+  .neu-btn-primary {
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    background: var(--primary);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 6px 6px 12px var(--shadow-dark), 
+                -6px -6px 12px var(--shadow-light);
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .neu-btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(1px);
+    box-shadow: 4px 4px 8px var(--shadow-dark), 
+                -2px -2px 8px var(--shadow-light);
+  }
+
+  /* Floating Badge */
+  .neu-badge {
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 8px var(--shadow-dark), 
+                -4px -4px 8px var(--shadow-light);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+}
+
+/* ─── Utilities ──────────────────────────────────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, #628B99 0%, #8baebc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-label {
+  font-family: 'Fira Code', monospace;
+  color: var(--primary);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+.live-dot {
+  animation: livePulse 2s ease-in-out infinite;
+  background-color: #10b981;
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.fade-delay-1 { animation-delay: 0.1s; }
+.fade-delay-2 { animation-delay: 0.2s; }
+.fade-delay-3 { animation-delay: 0.3s; }
+.fade-delay-4 { animation-delay: 0.4s; }
