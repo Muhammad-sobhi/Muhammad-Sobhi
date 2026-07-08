@@ -10,7 +10,16 @@ export default function ProjectCard({ project }) {
     <div className="neu-card overflow-hidden flex flex-col h-full p-6">
       {/* Header Area */}
       <div className="relative h-48 flex items-center justify-center neu-pressed rounded-2xl mb-6 overflow-hidden">
-        {project.image ? (
+        {project.video ? (
+          <video
+            src={project.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover absolute inset-0"
+          />
+        ) : project.image ? (
           <img
             src={project.image}
             alt={project.title}

@@ -14,7 +14,7 @@ const projects = [
     liveUrl: 'https://thattreeguyts.com/',
     githubUrl: null,
     icon: '🌳',
-    image: '/Muhammad-Sobhi/gifs/ThatTreeGuy.gif',
+    video: '/Muhammad-Sobhi/videos/ThatTreeGuy.mp4',
     featured: true,
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     liveUrl: null,
     githubUrl: null,
     icon: '🍵',
-    image: '/Muhammad-Sobhi/gifs/PilaTea.gif',
+    video: '/Muhammad-Sobhi/videos/PilaTea.mp4',
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     liveUrl: null,
     githubUrl: null,
     icon: '⚙️',
-    image: '/Muhammad-Sobhi/gifs/ERP-Workshop.gif',
+    video: '/Muhammad-Sobhi/videos/ERP-Workshop.mp4',
     featured: true,
   },
   {
