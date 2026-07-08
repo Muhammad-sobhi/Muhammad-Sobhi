@@ -21,9 +21,9 @@ const skills = [
 ];
 
 const stats = [
-  { value: '8+',   label: 'Years Experience' },
+  { value: '10+',   label: 'Years Experience' },
   { value: '50+',  label: 'Projects Delivered' },
-  { value: '3+',   label: 'Companies Worked' },
+  { value: '5+',   label: 'Companies Worked' },
   { value: '100%', label: 'Client Satisfaction' },
 ];
 
@@ -67,10 +67,10 @@ export default function About() {
         <div className="neu-card p-8 md:p-10 mb-20 reveal" style={{ opacity: 0 }}>
           <p className="text-lg leading-relaxed text-[var(--text-main)] font-medium">
             I&apos;m a Full Stack Web Developer with{' '}
-            <span className="font-bold text-[var(--text-dark)]">8+ years of experience</span> building
+            <span className="font-bold text-[var(--text-dark)]">10+ years of experience</span> building
             robust, scalable web applications. My expertise spans backend technologies
             like <span className="font-bold text-[var(--primary)]">Laravel &amp; PHP</span> and modern
-            frontend frameworks like <span className="font-bold text-[var(--primary)]">React.js</span>.
+            frontend frameworks like <span className="font-bold text-[var(--primary)]">React.js</span> & <span className="font-bold text-[var(--primary)]">Next.js</span> .
             I&apos;ve delivered projects across e-commerce, landscaping, education, and
             SaaS — always focused on clean code and exceptional UX.
           </p>

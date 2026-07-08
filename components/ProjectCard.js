@@ -9,10 +9,18 @@ export default function ProjectCard({ project }) {
   return (
     <div className="neu-card overflow-hidden flex flex-col h-full p-6">
       {/* Header Area */}
-      <div className="relative h-40 flex items-center justify-center neu-pressed rounded-2xl mb-6">
-        <span className="text-6xl z-10 select-none drop-shadow-md">
-          {project.icon}
-        </span>
+      <div className="relative h-48 flex items-center justify-center neu-pressed rounded-2xl mb-6 overflow-hidden">
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover absolute inset-0"
+          />
+        ) : (
+          <span className="text-6xl z-10 select-none drop-shadow-md">
+            {project.icon}
+          </span>
+        )}
 
         {/* Featured pill */}
         {project.featured && (

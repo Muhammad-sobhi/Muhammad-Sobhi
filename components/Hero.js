@@ -48,9 +48,9 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-base sm:text-lg mb-12 leading-relaxed max-w-2xl mx-auto fade-in-up fade-delay-3 font-medium text-[var(--text-main)]">
-          I&apos;ve been building for the web for <span className="font-bold text-[var(--text-dark)]">8+ years</span>.
+          I&apos;ve been building for the web for <span className="font-bold text-[var(--text-dark)]">10+ years</span>.
           Specializing in <span className="font-bold text-[var(--text-dark)]">Laravel</span>,{' '}
-          <span className="font-bold text-[var(--text-dark)]">React.js</span>, and{' '}
+          <span className="font-bold text-[var(--text-dark)]">React.js</span>, & <span className="font-bold text-[var(--text-dark)]">Next.js</span> , and{' '}
           <span className="font-bold text-[var(--text-dark)]">RESTful APIs</span> — with a focus on
           performance, clean architecture, and exceptional UX.
         </p>
