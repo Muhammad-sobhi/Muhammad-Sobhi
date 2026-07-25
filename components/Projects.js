@@ -18,6 +18,18 @@ const projects = [
     featured: true,
   },
   {
+    id: 9,
+    title: 'Atelier Sophia',
+    description:
+      'Bridal boutique ERP system — Laravel 11 REST API with Sanctum auth, Next.js 16 server-rendered dashboard with React 19 and Tailwind v4. Manages the full gown rental lifecycle with an appointment calendar, bride journey tracking, and gown lifecycle management.',
+    technologies: ['Laravel', 'Next.js', 'React.js', 'Tailwind CSS', 'MySQL', 'RESTful APIs'],
+    status: 'Live',
+    liveUrl: 'https://sophiadresses.cloud/',
+    githubUrl: null,
+    icon: '👗',
+    featured: true,
+  },
+  {
     id: 2,
     title: 'PilaTea Project',
     description:
