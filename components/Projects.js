@@ -27,6 +27,7 @@ const projects = [
     liveUrl: 'https://sophiadresses.cloud/',
     githubUrl: null,
     icon: '👗',
+    video: '/videos/AtelierSophia.mp4',
     featured: true,
   },
   {
