@@ -32,10 +32,10 @@ const projects = [
   },
   {
     id: 2,
-    title: 'PilaTea Project',
+    title: 'PILATEA',
     description:
-      'Pilates studio management platform — Laravel 11 API, React 19 admin panel, Next.js 14 public site. Features event booking, memberships, on-site tea ordering, email marketing, finance/expense tracking, and instructor management.',
-    technologies: ['Laravel', 'React.js','Next.js', 'MySQL', 'RESTful APIs', 'Tailwind CSS'],
+      'A full-stack wellness platform where Pilates meets tea. Built with Next.js 16 + TypeScript (storefront), Laravel 11 + Sanctum (REST API), and React 19 + Vite 8 (admin dashboard). Features real-time event booking, membership management, PDF invoices, role-based auth, email campaigns, and a glass-morphism animated UI with Tailwind CSS v4.',
+    technologies: ['Next.js 16', 'TypeScript', 'Laravel 11', 'React 19', 'Vite 8', 'Tailwind CSS v4', 'Sanctum', 'MySQL'],
     status: 'Completed',
     liveUrl: null,
     githubUrl: null,
