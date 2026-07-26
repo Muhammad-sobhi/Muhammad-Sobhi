@@ -58,15 +58,16 @@ const projects = [
   },
   {
     id: 4,
-    title: 'E-Commerce Platform',
+    title: 'Paper & Pen (ورقة وقلم)',
     description:
-      'Full-stack e-commerce solution with product catalog, shopping cart, and secure checkout built with Laravel backend and React.js frontend.',
-    technologies: ['Laravel', 'React.js', 'MySQL', 'Stripe API'],
-    status: 'In Progress',
+      'Full-stack e-commerce platform with bilingual EN/AR support and neumorphic design. Built with Next.js 14, Laravel 12, and React/Vite — featuring Sanctum authentication, real-time cart/wishlist sync, order management, and Excel import/export. Deployed across three interconnected apps: storefront, REST API, and admin dashboard.',
+    technologies: ['Next.js 14', 'Laravel 12', 'React', 'Vite', 'Sanctum', 'Tailwind CSS', 'MySQL', 'RESTful APIs'],
+    status: 'Completed',
     liveUrl: null,
     githubUrl: null,
     icon: '🛍️',
-    featured: false,
+    video: '/Muhammad-Sobhi/videos/PaperAndPen.mp4',
+    featured: true,
   },
   {
     id: 5,
