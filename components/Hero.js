@@ -21,8 +21,12 @@ export default function Hero() {
       >
         {/* Avatar */}
         <div className="mb-10 flex justify-center fade-in-up">
-          <div className="w-32 h-32 rounded-full neu-card flex items-center justify-center text-4xl font-black text-[var(--primary)]">
-            MS
+          <div className="w-32 h-32 rounded-full neu-card overflow-hidden">
+            <img
+              src="/Muhammad-Sobhi/me.png"
+              alt="Muhammad Sobhi"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
