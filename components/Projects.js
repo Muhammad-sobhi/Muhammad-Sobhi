@@ -36,8 +36,8 @@ const projects = [
     description:
       'A full-stack wellness platform where Pilates meets tea. Built with Next.js 16 + TypeScript (storefront), Laravel 11 + Sanctum (REST API), and React 19 + Vite 8 (admin dashboard). Features real-time event booking, membership management, PDF invoices, role-based auth, email campaigns, and a glass-morphism animated UI with Tailwind CSS v4.',
     technologies: ['Next.js 16', 'TypeScript', 'Laravel 11', 'React 19', 'Vite 8', 'Tailwind CSS v4', 'Sanctum', 'MySQL'],
-    status: 'Completed',
-    liveUrl: null,
+    status: 'Live',
+    liveUrl: 'https://pilatea.ca/',
     githubUrl: null,
     icon: '🍵',
     video: '/Muhammad-Sobhi/videos/PilaTea.mp4',
